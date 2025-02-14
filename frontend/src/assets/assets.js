@@ -100,7 +100,7 @@ export const assets = {
     frontpage
 }
 
-export const products = [
+/*export const products = [
     {
         _id: "aaaaa",
         name: "Women Round Neck Cotton Top",
@@ -725,4 +725,4 @@ export const products = [
         bestseller: false
     }
 
-]
+]*/
