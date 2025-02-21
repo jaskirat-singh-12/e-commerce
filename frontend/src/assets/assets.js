@@ -53,7 +53,6 @@ import p_img49 from './p_img49.png'
 import p_img50 from './p_img50.png'
 import p_img51 from './p_img51.png'
 import p_img52 from './p_img52.png'
-import img5 from './img5.jpg'
 import logo from './logos.jpg'
 import img1 from './img1.jpg'
 import img2 from './img2.jpg'
@@ -76,8 +75,23 @@ import menu_icon from './menu_icon.png'
 import contact_img from './contact_img.png'
 import razorpay_logo from './razorpay_logo.png'
 import stripe_logo from './stripe_logo.png'
+
 import cross_icon from './cross_icon.png'
 import frontpage from './frontpage.webp'
+
+import bike1 from './bike1.jpg'
+import bike2 from './bike2.jpg'
+import bike3 from './bike3.jpg'
+import bike4 from './bike4.jpg'
+import bike5 from './bike5.jpg'
+
+
+import wheelcover1 from './wheel-cover1.jpg'
+import wheelcover2 from './wheel-cover2.jpg'
+import wheelcover3 from './wheel-cover3.jpg'
+import wheelcover4 from './wheel-cover4.jpg'
+import wheelcover5 from './wheel-cover5.jpg'
+// import wheelcover from './bike5.jpg'
 
 export const assets = {
     logo,
