@@ -167,8 +167,6 @@ const PlaceOrder = () => {
                                 <p className='text-gray-500 text-sm font-medium mx-4'>CASH ON DELIVERY</p>
                             </div>
                         </div>
-
-                        {/* Buttons Section */}
                         <div className='w-full flex flex-col sm:flex-row justify-end gap-4 mt-8'>
                             <button type='submit' className='bg-black text-white px-16 py-3 text-sm rounded-md'>PLACE ORDER</button>
                         </div>

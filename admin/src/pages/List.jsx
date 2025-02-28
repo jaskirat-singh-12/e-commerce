@@ -4,13 +4,13 @@ import { backendUrl, currency } from '../App'
 import { toast } from 'react-toastify'
 
 const List = ({ token }) => {
-  const [password, setPassword] = useState(""); // State for password input
-  const [showPrompt, setShowPrompt] = useState(false); // State for showing the password prompt
-  const [message, setMessage] = useState(""); // State for displaying messages
-  const [messageColor, setMessageColor] = useState(""); // State for message color
-  const [currentProductId, setCurrentProductId] = useState(null); // State for current product ID
+  const [password, setPassword] = useState(""); 
+  const [showPrompt, setShowPrompt] = useState(false); 
+  const [message, setMessage] = useState(""); 
+  const [messageColor, setMessageColor] = useState(""); 
+  const [currentProductId, setCurrentProductId] = useState(null);
 
-  const correctPassword = "automobile123"; // Define the correct password
+  const correctPassword = "automobile123";
 
   const [list, setList] = useState([])
 
@@ -33,7 +33,7 @@ const List = ({ token }) => {
 
   const removeProduct = async (id) => {
     setShowPrompt(true);
-    setCurrentProductId(id); // Store the current product ID to be deleted
+    setCurrentProductId(id);
   }
 
   const handleDelete = async () => {
@@ -48,8 +48,8 @@ const List = ({ token }) => {
         setMessage("Incorrect password. Deletion canceled.");
         setMessageColor("red");
       }
-      setPassword(""); // Clear the password field
-      setShowPrompt(false); // Hide the prompt
+      setPassword("");
+      setShowPrompt(false);
 
     } catch (error) {
       console.log(error)
@@ -121,16 +121,16 @@ const List = ({ token }) => {
             Confirm
           </button>
           <button className=" text-16px bg-red-500 text-white px-5 py-2.5 mx-2 rounded border-none border-radius-5px cursor-pointer m-10px "
-            // style={{
-            //   padding: "10px 20px",
-            //   fontSize: "16px",
-            //   backgroundColor: "#757575",
-            //   color: "white",
-            //   border: "none",
-            //   borderRadius: "5px",
-            //   cursor: "pointer",
-            //   marginLeft: "10px",
-            // }}
+            style={{
+              padding: "10px 20px",
+              fontSize: "16px",
+              backgroundColor: "#757575",
+              color: "white",
+              border: "none",
+              borderRadius: "5px",
+              cursor: "pointer",
+              marginLeft: "10px",
+            }}
             onClick={() => setShowPrompt(false)}
           >
             Cancel

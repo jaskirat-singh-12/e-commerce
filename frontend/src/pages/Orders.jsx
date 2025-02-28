@@ -26,7 +26,7 @@ const Orders = () => {
               paymentMethod: order.paymentMethod,
               date: order.date,
               orderId: order._id,
-              address: order.address, 
+              address: order.address,
             });
           });
         });
@@ -68,7 +68,7 @@ const Orders = () => {
     // Grand Total
     doc.text(`Grand Total: ${currency}${(item.quantity * item.price).toFixed(2)}`, 15, doc.lastAutoTable.finalY + 15);
 
-    doc.save(`Invoice_${item.address.firstName}.pdf`);
+    doc.save(`Invoice of ${item.address.firstName}.pdf`);
   };
 
   useEffect(() => {
@@ -108,7 +108,6 @@ const Orders = () => {
                   onClick={() => generatePDF(item)}
                   className="bg-white text-black px-5 py-3 text-sm border-2 border-gray-200 rounded-md"
                 >
-                  {/* <FontAwesomeIcon icon={faFileArrowDown} /> */}
                   Download Invoice
                 </button>
               </div>
