@@ -5,6 +5,7 @@ import BestSeller from '../components/BestSeller'
 import OurPolicy from '../components/OurPolicy'
 // import NewsletterBox from '../components/NewsletterBox'
 import Banner from '../components/Banner'
+import Chatbox from '../components/Chatbox'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Banner/>
       <LatestCollection/>
       <BestSeller/>
+      <Chatbox/>
       <OurPolicy/>
     </div>
   )
